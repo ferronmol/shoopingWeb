@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    position:sticky;top:0;
+    background-color: rgb(4, 74, 112);
+    z-index: 1;
+}
+
+.header__container {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+
+.carrito {
+    position: absolute;
+    right: 2rem;
+    top: 0.6rem;
+    width: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito__icon {
+    font-size: 1.3rem;
+    color: white;
+    transition: transform 0.25s;
+}
+
+.carrito__icon:hover {
+    transform: scale(1.25);
+}
+
+.main__title {
+    color: rgb(4, 74, 112);
+    margin: 1rem 0 0 4rem;
+    font-variant: small-caps;
+    font-size: 2.5rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+}
+
+.card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.25rem 1rem rgb(182, 182, 182);
+    padding-top: 1rem;
+}
+
+.card__img {
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.15s;
+}
+
+.card__img:hover {
+    transform: scale(2);
+}
+
+.card__text {
+    margin: 1.5rem 0 0rem;
+    font-size: 0.85rem;
+    text-align: justify;
+    padding: 0 1rem;
+    color: #666;
+    line-height: 1.1rem;
+    height: 70px;
+}
+
+.card__precios {
+    text-align: right;
+    width: 80%;
+    margin: 0 0 1rem 0;
+    padding: 0 0.5rem 0;
+}
+
+.card__precio, .card__rebajado {
+    display: inline-block;
+}
+
+.card__rebajado {
+    font-size: 1.3rem;
+    color: rgb(47, 100, 126);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.card__precio {
+    padding-top: 0;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.card__button {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 0.9rem;
+    transition: background-color 0.5s;
+    display: block;
+    border: none;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(71, 119, 144, 0.548);
+    color: rgba(71, 119, 144, 0.986);
+}
+
+.card__button:hover {
+    background-color: rgba(71, 119, 144, 0.932);
+    color: white;
+}
+
+.card__icon {
+    margin-left: 1rem;
+}
+
+.modal__buttons {
+    text-align: center;
+}
+
+.modal-container {
+    left:0;
+    top: -1250px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: rgba(4, 74, 112, 0.089);
+}
+
+.modal {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.2rem;
+    background-color: rgba(4, 74, 112, 0.336);
+    padding: 0.5rem;
+}
+
+.modal__title {
+    color: rgb(4, 74, 112);
+    font-variant: small-caps;
+    font-size:1.75rem;
+}
+
+.modal__buttons{
+    width: 100%;
+}
+
+.modal__button{
+    width: 100%;
+    background-color: rgba(17, 133, 79, 0.849);
+    padding:0.5rem;
+    color:white;
+    font-weight: bold;
+    font-variant: small-caps;
+    border-radius: 0.12rem;
+    margin-top:0.5rem;
+    outline:none;
+    border:none;
+}
+
+.modal__button--cancelar{
+    border:1px solid rgba(240, 52, 52, 0.925);
+    background-color: rgba(240, 52, 52, 0.925)
+
+}
+
+.modal__mostrar {
+    animation-name: mostrar;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes mostrar {
+    from {
+        opacity: 0;
+        top: -900px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+        display: none;
+    }
+}
+
+@keyframes recoger {
+    from {
+        opacity: 1;
+        top: 0px;
+    }
+
+    to {
+        opacity: 0;
+        top: -900px;
+    }
+}
+
+.verde{
+    color:greenyellow
+}

@@ -1,0 +1,71 @@
+.productos {
+  margin: 1rem auto;
+  width: 600px;
+}
+
+.producto {
+  display: flex;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.producto__img {
+  max-width: 50px;
+  object-fit: contain;
+}
+
+.producto p {
+  margin: 0;
+}
+
+.producto__texto {
+  font-weight: bold;
+  margin: 0.3rem;
+}
+
+.precio{
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 6rem;
+}
+
+.precio__text, .precio__total{
+  font-size: 1.9rem;
+  margin-right: 0.5rem;
+  font-variant: small-caps;
+}
+
+.precio__total{
+  color:orangered
+}
+
+.btncomprar{
+  width: 100%;
+  outline:none;
+  border:none;
+  background-color: rgba(17, 133, 79, 0.637);
+  padding:0.5rem;
+  color:white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  border-radius: 0.12rem;
+  margin-top:0.5rem;
+}
+
+.btncomprar:hover{
+  background-color: rgba(17, 133, 79, 0.918);
+  cursor: pointer;
+}
+
+.producto__btnborrar{
+  outline:none;
+  border:none;
+  background-color: rgba(17, 133, 79, 0.637);
+  color:white;
+  font-variant: small-caps;
+  border-radius: 0.12rem;
+  margin:0.5rem ;
+}

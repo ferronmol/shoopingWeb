@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="css/all.css" rel="stylesheet" type="text/css" />
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/ventas.css" rel="stylesheet" type="text/css" />
+  <title>Ribera Shopping....</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <section class="header__container">
+      <!-- Menú-->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">
+              <i class="nav__icon fas fa-home"></i>Inicio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="nav__icon fas fa-users"></i>Clientes
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="nav__icon  fa-solid fa-dolly"></i>Productos
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="ventas.html" class="nav__link">
+              <i class="nav__icon fa-solid fa-basket-shopping"></i>Ventas
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <div class="container">
+    <main class="main">
+      <h1 class="main__title">Ventas</h1>
+      <!-- Selects para consultas por producto y por cliente -->
+      <section class="ventas" id="ventas">
+        <section class="consultas">
+          <button id="btn_todos" class="consulta__todos">Todos</button>
+          <select name="" id="select_clientes" class="consultas__selectclientes">
+            <option class="" value="" selected disabled>Clientes</option>
+          </select>
+
+          <select name="" id="select_productos" class="consultas__selectproductos">
+            <option class="" value="" selected disabled>Productos</option>
+          </select>
+
+          <select name="" id="select_precios" class="consultas__selectprecios">
+            <option value="" selected disabled>Precios</option>
+            <option value="10"> menos de 10€</option>
+            <option value="10-50">Entre 10€ y 50€</option>
+            <option value="50-100">Entre 50€ y 100€</option>
+            <option value="100-200">Entre 100€ y 200€</option>
+            <option value="200">más 200</option>
+          </select>
+
+        </section>
+
+        
+
+        <!-- Tabla de resultados -->
+        <table class="tablaventas">
+          <thead>
+            <td class="tablaventas__encabezado">Cliente</td>
+            <td class="tablaventas__encabezado">Producto</td>
+            <td class="tablaventas__encabezado">Precio</td>
+            <td class="tablaventas__encabezado">Fecha Compra</td>
+          </thead>
+          <tbody class="tablaventas__body" id="tablaventas_body">
+
+           <!--AQUI AÑADIMOS LAS FILAS CON LAS VENTAS!!!! -->
+          
+          </tbody>
+        </table>
+
+
+      </section>
+     
+
+    </main>
+  </div>
+
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/clientes.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/ventas.js"></script>
+  <script src="js/scriptventas.js"></script>
+</body>
+
+</html>

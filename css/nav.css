@@ -1,0 +1,38 @@
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  width: 100px;
+  margin: 0 0.9rem;
+  list-style-type:none;
+}
+
+.nav__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 0.95rem;
+  letter-spacing: 0.015rem;
+  margin: 0.8rem 0;
+  border-bottom: 2px solid transparent;
+  transition:border-bottom 0.25s, transform 0.25s ease-in;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid white;
+  transform:scale(1.05);
+  letter-spacing: 0.05rem;
+}
+
+.nav__icon {
+  vertical-align: middle;
+  font-size: 0.75rem;
+  padding: 0 0.5rem 0.2rem 0;
+  color: white;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="css/all.css" rel="stylesheet" type="text/css" />
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/carrito.css" rel="stylesheet" type="text/css" />
+  <title>Ribera Shopping....</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <section class="header__container">
+      <!-- Menú-->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">
+              <i class="nav__icon fas fa-home"></i>Inicio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="nav__icon fas fa-users"></i>Clientes
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="nav__icon  fa-solid fa-dolly"></i>Productos
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="ventas.html" class="nav__link">
+              <i class="nav__icon fa-solid fa-basket-shopping"></i>Ventas
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="carrito">
+        <i class="carrito__icon fas fa-user"></i>
+        <a href="carrito.html"><i id="carrito__compra" class="carrito__icon fa-solid fa-cart-arrow-down"></i> </a>
+      </section>
+
+    </section>
+  </header>
+  <div class="container">
+    <main class="main">
+      <h1 class="main__title">Comprar</h1>
+
+      <section class="productos" id="productos">
+
+       <!--AQUI AÑADIMOS LOS PRODUCTOS DEL CARRITO!!!! -->
+      
+      </section>
+      <section class="precio" id="precio">
+        <p class="precio__text"> Total:  </p>
+        <p class="precio__total" id="precio_total"> 0 €</p>
+      </section>
+      <button class="btncomprar" id="btncomprar">Comprar</button>
+    </main>
+  </div>
+
+  <script src="js/carrito.js"></script>
+</body>
+
+</html>

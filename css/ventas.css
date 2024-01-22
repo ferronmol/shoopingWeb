@@ -1,0 +1,67 @@
+*{
+  color: rgb(4, 74, 112);
+}
+.tablaventas {
+  width: 100%;
+  border-spacing: 10px 5px;
+}
+
+.tablaventas td {
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid;
+  vertical-align: bottom;
+}
+
+.tablaventas td:nth-child(1) {
+  width: 20%;
+}
+
+.tablaventas td:nth-child(2) {
+  width: 60%;
+}
+
+.tablaventas td:nth-child(3) {
+  width: 10%;
+  text-align: right;
+}
+
+.tablaventas td:nth-child(4) {
+  width: 10%;
+  text-align: right;
+}
+
+.tablaventas thead td {
+  padding: 0.25rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.consultas{
+  border-top: 1px solid rgb(4, 74, 112);
+  border-bottom: 1px solid rgb(4, 74, 112);
+  display:flex;
+  justify-content:space-evenly;
+  padding: 2rem;
+  margin-bottom:2rem;
+}
+
+.consultas__selectclientes, .consultas__selectproductos, 
+.consultas__selectprecios, .consulta__todos{
+  width: 200px;
+  border:none;
+  outline:none;
+  border: 1px solid;
+  padding:0.3rem 0;
+  border-radius: 0.25rem;
+  background-color:rgba(128, 128, 128, 0.144);
+  font-weight: bold;
+}
+.consultas__selectproductos{
+  width: 300px;
+}
+
+
+
+
