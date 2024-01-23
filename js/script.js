@@ -21,7 +21,7 @@ const cargarProductos = async () => {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
     const productos = data.map((producto) => {
-      return new Producto(
+      return new Producto( //creo un objeto de la clase Producto
         producto.id,
         producto.title,
         producto.price,

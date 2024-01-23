@@ -1,8 +1,8 @@
 const productos = document.getElementById("productos");
 const btncomprar = document.getElementById("btncomprar");
 const precio_total = document.getElementById("precio_total");
-let carrito = [];
-let carritoGuardado = [];
+let carrito = []; //array de objetos para guardar los productos del carrito
+let carritoGuardado = []; //array de objetos para guardar los productos del carrito en el localstorage
 
 //eliminar un producto del carrito
 const eliminar = (e) => {
@@ -11,7 +11,7 @@ const eliminar = (e) => {
   const producto = boton.parentElement.parentElement;
   console.log("he pulsado el boton de eliminar");
   const nombre = producto.querySelector(
-    ".producto__textos span:nth-child(2)"
+    ".producto__textos span:nth-child(2)" //selecciono el segundo span dentro del section que es el nombre
   ).textContent;
   // Encontrar el índice del producto en el array
   const indice = carritoGuardado.findIndex(
@@ -46,7 +46,7 @@ const mostrarCarrito = () => {
     total += parseFloat(producto.precio);
   });
 
-  precio_total.textContent = `${total.toFixed(2)} €`;
+  precio_total.textContent = `${total.toFixed(2)} €`; //toFixed(2) para que solo muestre 2 decimales
 };
 
 const crearProducto = (producto) => {

@@ -91,13 +91,12 @@ const mostrarProductos = (productos) => {
 /******************************************************************* */
 
 // Función para simular una venta
-// Función para simular una venta
 const simulaVenta = () => {
   // Asegúrate de que haya clientes y productos antes de intentar crear una venta
   if (Clientes.length > 0 && Productos.length > 0) {
     console.log("simulando venta, clientes y productos disponibles");
 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 40; i++) {
       // Selecciona un cliente aleatorio
       const cliente = Clientes[Math.floor(Math.random() * Clientes.length)];
 
@@ -126,7 +125,7 @@ const simulaVenta = () => {
   }
 };
 
-// Llama a la función para simular 15 ventas
+// Llama a la función para simular 40 ventas
 simulaVenta();
 
 // Función para filtrar y mostrar las ventas en la tabla

@@ -5,7 +5,6 @@ class Producto {
     this.precio = precio;
     this.imagen = imagen;
   }
-
   getCodigo() {
     return this.codigo;
   }
